@@ -10,7 +10,7 @@ const VideoPlayer = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const video = await axios.post(`https://full-stack-cloudinary-image-videos-backend.vercel.app/api/display/${id}`);
+        const video = await axios.post(`https://full-stack-cloudinary-image-videos-backend.vercel.app/display/${id}`);
         setVideo(video.data)
       } catch (error) {
         console.log(error);
