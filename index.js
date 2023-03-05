@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(fileUpload({ useTempFiles: true }));
 app.use(cors({
-  origin: "https://full-stack-cloudinary-image-videos.vercel.app/",
+  origin: "https://full-stack-cloudinary-image-videos.vercel.app",
   methods: ["GET","POST","PUT","DELETE"]
 }));
  /*Router*/
