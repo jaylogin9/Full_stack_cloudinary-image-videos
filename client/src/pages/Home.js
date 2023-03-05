@@ -11,7 +11,7 @@ const Home = () => {
 
   const loadData = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/home");
+      const response = await axios.get("https://full-stack-cloudinary-image-videos-backend.vercel.app/api/home");
         setData(response.data);
       // console.log(response.data);
     } catch (error) {

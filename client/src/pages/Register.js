@@ -32,7 +32,7 @@ const UploadForm = () => {
     });
 
     try {
-      const response = await axios.post('http://localhost:8080/api/register', formDataWithFiles);
+      const response = await axios.post('https://full-stack-cloudinary-image-videos-backend.vercel.app/api/register', formDataWithFiles);
       console.log(response.data);
       window.alert("Data uploaded successfully");
 
